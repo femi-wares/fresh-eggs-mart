@@ -1,9 +1,10 @@
-const CACHE = "fresh-eggs-mart-v1";
+const CACHE = "fresh-eggs-mart-v2";
 const ASSETS = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
+  "./images-data.js",
   "./manifest.json",
   "./icon.svg"
 ];
