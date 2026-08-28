@@ -20,7 +20,7 @@
   <header class="topbar">
     <div class="topbar-inner">
       <a href="#/" class="logo" data-nav="home">
-        <img src="images/logo.jpg" alt="Fresh Eggs Mart" class="logo-img" width="40" height="40" />
+        <img src="images/logo.jpg" alt="Fresh Eggs Mart" class="logo-img" width="40" height="40" onerror="this.src=window.FEM_IMGS&&window.FEM_IMGS.logo||this.src" />
         <span class="logo-text">
           <strong>Fresh Eggs Mart</strong>
           <small>Aba · Farm Prices</small>
@@ -44,61 +44,35 @@
       </div>
     </div>
   </header>
-
   <main id="app"></main>
-
   <div class="cart-overlay" id="cartOverlay" hidden></div>
   <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
     <div class="cart-head">
       <h2>Your list</h2>
       <button type="button" class="icon-btn" id="closeCart" aria-label="Close cart">&times;</button>
     </div>
-    <div class="cart-body" id="cartBody">
-      <p class="cart-empty">Nothing added yet.</p>
-    </div>
+    <div class="cart-body" id="cartBody"><p class="cart-empty">Nothing added yet.</p></div>
     <div class="cart-foot">
-      <div class="cart-total-row">
-        <span>Total</span>
-        <strong id="cartTotal">₦0</strong>
-      </div>
+      <div class="cart-total-row"><span>Total</span><strong id="cartTotal">₦0</strong></div>
       <button type="button" class="btn btn-outline" id="clearCart">Clear cart</button>
       <button type="button" class="btn btn-primary" id="checkoutWa">Order via WhatsApp</button>
     </div>
   </aside>
-
   <nav class="bottom-nav" id="bottomNav" aria-label="Mobile">
-    <a href="#/" class="bn-item" data-nav="home">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg>
-      <span>Home</span>
-    </a>
-    <a href="#/shop" class="bn-item" data-nav="shop">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 01-8 0"/></svg>
-      <span>Shop</span>
-    </a>
-    <a href="#/about" class="bn-item" data-nav="about">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-      <span>About</span>
-    </a>
-    <a href="#/contact" class="bn-item" data-nav="contact">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-      <span>Contact</span>
-    </a>
+    <a href="#/" class="bn-item" data-nav="home"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z"/></svg><span>Home</span></a>
+    <a href="#/shop" class="bn-item" data-nav="shop"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 01-8 0"/></svg><span>Shop</span></a>
+    <a href="#/about" class="bn-item" data-nav="about"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg><span>About</span></a>
+    <a href="#/contact" class="bn-item" data-nav="contact"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><span>Contact</span></a>
   </nav>
-
   <footer class="site-footer">
     <div class="footer-inner">
-      <div>
-        <strong class="footer-title">Fresh Eggs Mart</strong>
-        <p>Good Eggs. Good Life. Farm-fresh eggs and frozen foods — wholesale &amp; retail in Aba.</p>
-      </div>
-      <div>
-        <p>No. 2 Garden Avenue, off Okigwe Road, Aba, Abia State</p>
-        <p class="muted">Call 0907 257 8907 · WhatsApp orders welcome</p>
-      </div>
+      <div><strong class="footer-title">Fresh Eggs Mart</strong><p>Good Eggs. Good Life. Farm-fresh eggs and frozen foods — wholesale &amp; retail in Aba.</p></div>
+      <div><p>No. 2 Garden Avenue, off Okigwe Road, Aba, Abia State</p><p class="muted">Call 0907 257 8907 · WhatsApp orders welcome</p></div>
     </div>
   </footer>
-
-  <script src="images-data.js"></script>
+  <script src="img-logo.js"></script>
+  <script src="img-storefront.js"></script>
+  <script src="img-crates.js"></script>
   <script src="app.js" defer></script>
 </body>
 </html>
