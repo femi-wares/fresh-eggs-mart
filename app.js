@@ -1,14 +1,14 @@
 /* Fresh Eggs Mart — SPA
- * WA from storefront: 0907 257 8907 · 0806 968 2053
+ * WA: 0907 257 8907 · 0806 968 2053
  */
 const WA_NUMBER = "2349072578907";
 const CALL_NUMBER = "09072578907";
 
-const IMG = window.FEM_IMGS || {
-  storefront: "images/storefront.jpg",
-  crates: "images/crates.jpg",
-  logo: "images/logo.jpg",
-};
+const IMG = Object.assign({
+  storefront: "https://litter.catbox.moe/ia8dv0.jpg",
+  crates: "https://litter.catbox.moe/pd27qu.jpg",
+  logo: "https://litter.catbox.moe/3hl03d.jpg",
+}, window.FEM_IMGS || {});
 
 const PRODUCTS = [
   { id: 1, name: "Medium Crates", desc: "Farm-fresh medium eggs. Ideal for homes and small resale.", price: 4800, category: "Eggs", unit: "crate", img: IMG.crates },
